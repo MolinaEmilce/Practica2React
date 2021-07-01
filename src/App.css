@@ -1,38 +1,435 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+/*Buscador*/
+button:hover{
+  cursor: pointer;
+  background-color:   #fcdefa;
+  color: #f1a2fc;
+}
+h1{
+  font-weight: inherit;
   text-align: center;
-}
+  margin: 10px 0px;
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buscador{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: #eca3f5;
+  padding-bottom: 70px;
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wave{
+  position: absolute;
+  width: 100%;
+  bottom: -22px;
+  height: 120px; 
+  overflow: hidden;
+}
+.wave>svg{
+  height: 100%;
+  width: 100%;
+}
+.wave>svg>path{
+  stroke: none; 
+  fill: #fff;
+  margin-bottom: 20px;
+}
+.buscador form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 50px;
+}
+.buscador form  input[type="text"]{
+  font-size: 12px;
+  width: 80%;
+  margin: auto;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+button{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  background-color: #fdbaf8;
   color: white;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+::placeholder{
+  color: #eca3f5;
+}
+/*Section de respuesta*/
+.respuesta{
+  margin: 10px;
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+/*falta editar*/
+img{
+  width: 90%;
+  height: 90%;
+}
+.biografia .bio_imagen {
+display: flex;
+flex-wrap: wrap;
+width: 100px;
+height: 90px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*----*/
+
+div.bio_general{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color: #b0efeb65;
+border-radius: 20px;
+padding: 8px 0px;
+}
+.bio_datos{
+height:70%;
+background-color: white;
+width: 50%;
+font-size: 12px;
+padding-left: 5px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 5px 0px;
+padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*........................*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cancion>p {
+width: 100%;
+text-align: center;
+margin-top: 20px ;
+}
+.cancion>h2{
+  width: 90%;
+  background-color: #fdbaf843;
+  border-radius: 30px  5px 30px 5px;
+  font-weight: bold;
+}
+.cancion{
+  font-family: 'Dosis', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cancion{
+  padding: 10px 0px;
+  margin: 20px 0px;
+}
+/*Footer*/
+footer{
+  position: relative;
+}
+.footer{
+  background-color: #eca3f5;
+  padding-bottom: 20px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer div{
+  margin: 10px 0px;
+}
+.footer div p{
+  color:#fff;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.footer .redes i{
+margin: 0px 5px;
+font-size: 1.5rem;
+color:  #ffc6fb;
+}
+.footer .redes i:hover{
+  color:  #fcdefa;
+  cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+footer>div.wave2{
+  position: absolute;
+  top: -120px;
+  width: 100%;
+  height: 120px; 
+  overflow: hidden;
+}
+.wave2>svg{
+  height: 100%;
+   width: 100%;
+}
+.wave2>svg>path{
+  stroke: none;
+   fill: #eca3f5;
+}
+@media screen and (min-width:425px) {
+  .footer div p{
+      font-size: 16px;
+  }
+  .footer .redes i{
+  margin: 0px 8px;
+  font-size: 2.3rem;
+  color:  #ffc6fb;
+  }
+  .biografia .bio_imagen {
+      width: 150px;
+      height:150px;
+   }
+  div.bio_general{    
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+  }
+  .bio_datos {
+      width:65%;
+      margin-right: 15px;
+  }
+  .buscador form  input[type="text"]{
+      font-size: 15px;
+      width: 50%;
+      margin-bottom: 12px;
+  }
+   button{
+    width: 30%;
+    margin-top: 5px;
+    padding: 9px 0px;
+    font-size: 12px;
+  }
+
+  h2{
+      font-size: 20px;
+  }
+  .buscador{
+      padding-bottom: 65px;
+      position: relative;
+  }
+  .bio_datos{
+      font-size: 15px;
+  }
+  .cancion>p {
+      font-size: 18px;
+     }
+}
+@media screen and (min-width:768px) {
+  .footer{
+      flex-direction: row;
+  }
+  .footer>div:nth-child(1){
+      border-right: 1px solid #ffc6fb;
+      padding-right: 10px;
+      margin-right: 10px;
+  }
+  h1{
+      font-size: 35px;
+  }
+  h2{
+      font-size: 24px;
+  }
+  .buscador form  input[type="text"]{
+      font-size: 17px;
+      width: 35%;
+  }
+  div.bio_general{
+      width: 70%;
+      flex-direction: column;
+      padding-bottom: 15px;
+  }
+  button{
+      width: 18%;
+      padding: 10px 0px;
+  }
+  .cancion>h2{
+      width: 70%;
+      background-color: #fdbaf843;
+      border-radius: 30px  5px 30px 5px;
+      font-weight: bold;
+  }
+  .bio_datos{
+      background:none;
+      width: 85%;
+      font-size: 16px;
+      padding-left: 0px;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .bio_datos p{
+      background-color: white;
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 10px;
+  }
+  .biografia .bio_imagen {
+      display: flex;
+      flex-wrap: wrap;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+}
+
+@media screen and (min-width:1024px) {
+  .respuesta{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .biografia{
+      width: 40%;
+  }
+  .cancion{
+      width: 50%;
+      margin: 0px;
+      padding: 0px;
+      justify-content: start;
+  }
+  div.bio_general{
+      width: 100%;
+      flex-direction: column;
+      padding-bottom: 15px;
+  }
+  .respuesta{
+      margin: 30px 0px;
+  }
+  .biografia>h2{
+      background-color: #b0efeb65;
+      margin-bottom: 2px;
+      border-radius: 40px 40px 0px 0px;
+  }
+  div.bio_general{
+      border-radius: 0px 0px 20px 20px;
+  }
+  .buscador form  input[type="text"]{
+      font-size: 19px;
+      width: 30%;
+      padding: 10px 10px; 
+  }
+  button{
+      width: 15%;
+      padding: 10px 0px;
+      font-size: 14px;
+  }
+  h2{
+      font-size: 27px;
+  }
+  .cancion>p {
+      font-size: 20px;
+     }
+     .bio_datos{
+      font-size: 19px;
+  }
+  h1{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width:424px) {
+  .footer div p{
+      font-size: 14px;
+  }
+  .footer .redes i{
+  margin: 0px 8px;
+  font-size: 2rem;
+  color:  #ffc6fb;
+  }
+  .buscador form input[type="text"] {
+      width: 60%;
+  }
+  .biografia .bio_imagen {
+      width: 130px;
+      height:130px;
+   }
+   div.bio_general {
+      justify-content:center ;
+  }
+  .bio_datos {
+      /* height: 70%; */
+      background-color: white;
+      width: 60%;
+      margin-right: 10px;
+  }
+  button {
+      width: 35%;
+      font-size: 11px;
+      padding: 8px 2px;
+      text-align: center;
+  }
+}
+@media screen and (max-width:1440px) {
+
+.footer div p{
+  font-size: 18px;
+}
+.footer .redes i{
+margin: 0px 8px;
+font-size: 2.5rem;
+color:  #ffc6fb;
+}
+footer{
+  margin-top: 100px;
+}
+
+}
+
+@media screen and (max-width:325px) {
+  .biografia .bio_imagen {
+      width: 110px;
+      height:110px;
+   }
+   .bio_datos{
+       font-size: 8px;
+   }
+   button {
+      width: 40%;
+      font-size: 9px;
+      
+  }
+  .buscador form input[type="text"] {
+      width: 75%;
+  }
+  .footer .redes i{
+  font-size: 2rem;
+  }
+  .footer div p{
+      font-size: 14px;
+      text-align: center;
+      margin: 0px 2px;
   }
 }
